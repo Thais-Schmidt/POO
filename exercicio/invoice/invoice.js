@@ -54,6 +54,3 @@ let compra1 = new Invoice (1, "Miojo Tomate Turma da Monica", 3, 2.50);
 
 console.log(compra1);
 console.log(`O valor total da compra foi de ${compra1.getInvoiceAmount()}`);
-
-
-
