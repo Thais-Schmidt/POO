@@ -1,0 +1,14 @@
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\bin\Debug\net7.0\ConsoleAppCSharp.exe
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\bin\Debug\net7.0\ConsoleAppCSharp.deps.json
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\bin\Debug\net7.0\ConsoleAppCSharp.runtimeconfig.json
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\bin\Debug\net7.0\ConsoleAppCSharp.dll
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\bin\Debug\net7.0\ConsoleAppCSharp.pdb
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.AssemblyInfoInputs.cache
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.AssemblyInfo.cs
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.csproj.CoreCompileInputs.cache
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.dll
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\refint\ConsoleAppCSharp.dll
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.pdb
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ConsoleAppCSharp.genruntimeconfig.cache
+C:\Users\23148612\Documents\segundoSemestre\POO\C#\ConsoleAppCSharp\obj\Debug\net7.0\ref\ConsoleAppCSharp.dll
