@@ -30,6 +30,8 @@ namespace ConsoleAppCSharp
             Console.WriteLine($"Agencia numero {cP1.Agencia}, Conta poupança:{cP1.NumConta}");
             Console.WriteLine(cP1.Depositar(cP1, 2000)); //depositando 2000,00
             Console.WriteLine(cP1.RendimentoJuros());
+
+            Console.WriteLine(cP1.Emprestimo(500, new DateTime(2023,11,10)));
             
         }
     }

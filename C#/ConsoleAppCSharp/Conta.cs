@@ -78,6 +78,11 @@ namespace ConsoleAppCSharp
             }
         }
 
+        public string Emprestimo(double valor, DateTime data)
+        {
+            return $"Emprestimo no valor de R${valor:N2} realizado em {data}";
+        }
+
     }
 
 }
