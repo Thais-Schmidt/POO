@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/atividade.css">
+    <title>Document</title>
+    <script type="module" src="../js/app.js"></script>
+</head>
+
+<body>
+
+    <h1>Inserindo e processando dados em tabela</h1>
+
+    <form class="info" name="info">
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+
+        <label for="data_nasc">Data de nascimento:</label>
+        <input type="date" id="data_nasc">
+
+        <label for="funcao">Funçao:</label>
+        <select name="funcao" id="funcao">
+            <option value="selecione">Selecione</option>
+            <option value="professor">Professor</option>
+            <option value="diretor">Diretor</option>
+            <option value="coordenador">Coordenador</option>
+            <option value="porteiro">Porteiro</option>
+        </select>
+
+        <input type="button" value="Inserir">
+
+    </form>
+
+    <div>
+
+        <h1>Dados coletados:</h1>
+        <table id="tbl-pessoas"></table>
+
+    </div>
+
+</body>
+
+</html>
