@@ -122,7 +122,7 @@ console.log(produtos);
 console.log(produtos.carrinho(`Faqueiro`));
 console.log(produtos.carrinho(`Liquidificador`));
 
-//adicionando produto nao existente no estoque
+//adicionando produto nao existente no carrinho
 
 console.log(produtos.carrinho(`Vassoura`));
 

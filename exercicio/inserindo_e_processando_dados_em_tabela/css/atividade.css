@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: rgb(252, 230, 255);
+    background: -moz-linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
+    background: -webkit-linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
+    background: linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fce6ff", endColorstr="#f1ebf7", GradientType=1);
+
+    height: 100vh;
+}
+
+:root {
+    --font-title: Georgia, Times, 'Times New Roman', serif;
+    --font-text: Georgia, Times, 'Times New Roman';
+    --font-exp: bold;
+}
+
+h1 {
+    font-family: var(--font-title);
+    text-align: center;
+    margin: 20px;
+}
+
+h2{
+    font-family: var(--font-title);
+    text-align: center;
+    margin: 20px;
+}
+
+label {
+    font-family: var(--font-text);
+    font-weight: var(--font-exp);
+
+
+}
+
+input,
+select {
+    border: none;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--font-text);
+    font-size: larger;
+}
+
+.tab {
+    max-height: 300px;
+    overflow: auto;
+    padding-bottom: 10px;
+    /* Adiciona espaço para a barra de rolagem */
+}
+
+table {
+    margin: 0 auto;
+    /* centraliza a tabela horizontalmente */
+    margin-bottom: 40px;
+    width: 70%;
+    border-radius: 12px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    background-color: #fafafa;
+
+}
+
+form {
+    margin: 0 auto;
+    /* centraliza a tabela horizontalmente */
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+}
+
+#btn{
+    background-color: rgb(195, 167, 221);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#desc {
+    text-align: center;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: rgb(195, 167, 221);
+    font-family: var(--font-title);
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-family: var(--font-text);
+}
+
+tr:hover {
+    background-color: rgb(227, 206, 247);
+}

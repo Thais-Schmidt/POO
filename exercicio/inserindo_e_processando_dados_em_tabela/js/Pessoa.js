@@ -30,50 +30,51 @@ export default class Pessoa {
 
     idade() {
         let anoAtual = new Date().getFullYear();
-        let anoNasci = document.getElementById("data_nasc").value;
+        let dataNascimento = document.getElementById("data_nasc").value;
 
-        if (!isNaN(anoNascimento)) {
-            let idade = anoAtual - anoNasci;
-            return idade;
-        }
-        else {
-            alert("Insira uma data de nascimento valida.");
-        }
+        if (dataNascimento) {
+            let anoNascimento = new Date(dataNascimento).getFullYear();
+
+            if (!isNaN(anoNascimento)) {
+                let idade = anoAtual - anoNascimento;
+                return idade;
+            } else {
+                alert("Ano de nascimento inválido");
+            }
+        } 
+        
     }
 
-    // //criando tabela
+    // incluindo linhas na tabela
 
-    inserindoDados() {
-        table += `<tr>
-        <td> </td>    
-        <td> </td>
-        <td> </td>    
-        <td> </td>   
-        </tr>`;
+    static criandoTabela() {
+        return `<tr>
+                    <th>Nome:</th>
+                    <th>Nascimento:</th>
+                    <th>Funçao:</th>
+                    <th>Idade:</th>
+                </tr>`;
+
     }
+
+    retornandoDados() {
+        return `<tr>
+                    <td>${this.Nome}</td>
+                    <td>${this.Ano}</td>
+                    <td>${this.Cargo}</td>
+                    <td>${this.Idade}</td>
+                </tr>`;
+    }
+
+    novaPessoa() {
+        let tabela = document.getElementById("tbl-pessoas");
+
+        if (!tabela.innerHTML.trim()) {
+            tabela.innerHTML = Pessoa.criandoTabela();
+        }
+
+        tabela.innerHTML += this.retornandoDados(); // Adicionando a nova linha
+    }
+
 
 }
-
-function calcularIdade() {
-    let anoAtual = new Date().getFullYear();
-    let dataNascimento = document.getElementById("data_nasc").value;
-
-    // Certifique-se de que a data de nascimento não está vazia
-    if (dataNascimento) {
-        // Extraia o ano da data de nascimento
-        let anoNascimento = new Date(dataNascimento).getFullYear();
-
-        // Certifique-se de que o ano de nascimento é um número válido
-        if (!isNaN(anoNascimento)) {
-            let idade = anoAtual - anoNascimento;
-            return idade;
-        } else {
-            // Trate o caso em que o ano de nascimento não é um número válido
-            return "Ano de nascimento inválido";
-        }
-    } else {
-        // Trate o caso em que a data de nascimento está vazia
-        return "Informe a data de nascimento";
-    }
-}
-
