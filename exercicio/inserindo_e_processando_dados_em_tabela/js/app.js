@@ -21,4 +21,23 @@ function adicionando() {
 
 export { adicionando };
 
+// Funçao para não permitir caracteres especiais ao preencher o nome
 
+const nomeInput = document.querySelector("#nome");
+
+nomeInput.addEventListener("keypress", function(e) {
+
+    if(!checandoCaracter(e)){
+        e.preventDefault();
+    }
+});
+
+function checandoCaracter(e) {
+    const caracter = String.fromCharCode(e.keyCode);
+
+    const pattern = '[a-z A-Z]';
+
+    if(caracter.match(pattern)){
+        return true;
+    }
+}
