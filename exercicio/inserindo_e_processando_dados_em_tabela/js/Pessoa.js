@@ -49,9 +49,9 @@ export default class Pessoa {
 
     static criandoTabela() {
         return `<tr>
-                    <th>Nome:</th>
+                    <th id="nome-th">Nome:</th>
                     <th>Nascimento:</th>
-                    <th>Funçao:</th>
+                    <th>Função:</th>
                     <th>Idade:</th>
                 </tr>`;
 
@@ -59,9 +59,9 @@ export default class Pessoa {
 
     retornandoDados() {
         return `<tr>
-                    <td>${this.Nome}</td>
+                    <td id="nome-td">${this.Nome}</td>
                     <td>${this.Ano}</td>
-                    <td>${this.Cargo}</td>
+                    <td id="func-td">${this.Cargo}</td>
                     <td>${this.Idade}</td>
                 </tr>`;
     }
