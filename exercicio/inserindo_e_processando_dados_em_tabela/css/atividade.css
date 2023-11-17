@@ -6,11 +6,11 @@
 }
 
 body {
-    background: rgb(252, 230, 255);
-    background: -moz-linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
-    background: -webkit-linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
-    background: linear-gradient(0deg, rgba(252, 230, 255, 1) 0%, rgba(241, 235, 247, 1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fce6ff", endColorstr="#f1ebf7", GradientType=1);
+    background: rgb(238, 174, 202);
+    background: -moz-linear-gradient(180deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: -webkit-linear-gradient(180deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    background: linear-gradient(180deg, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#eeaeca", endColorstr="#94bbe9", GradientType=1);
 
     height: 100vh;
 }
@@ -27,7 +27,7 @@ h1 {
     margin: 20px;
 }
 
-h2{
+h2 {
     font-family: var(--font-title);
     text-align: center;
     margin: 20px;
@@ -36,58 +36,54 @@ h2{
 label {
     font-family: var(--font-text);
     font-weight: var(--font-exp);
-
-
+    text-align: center;
+    padding-bottom: 3px;
 }
 
 input,
 select {
-    border: none;
+    border: 0.2px black solid;
     border-radius: 5px;
     height: 30px;
+    width: 200px;
     text-align: center;
     margin-bottom: 10px;
+
     font-family: var(--font-text);
     font-size: larger;
 }
 
 .tab {
-    max-height: 300px;
+    max-height: 230px;
     overflow: auto;
-    padding-bottom: 10px;
-    /* Adiciona espaço para a barra de rolagem */
+}
+
+#tbl-pessoas {
+    width: 70%;
+    overflow-y: auto;
 }
 
 table {
     margin: 0 auto;
-    /* centraliza a tabela horizontalmente */
-    margin-bottom: 40px;
     width: 70%;
-    border-radius: 12px;
-    border-collapse: collapse;
     border-spacing: 0;
     background-color: #fafafa;
-
+    overflow: auto;
 }
 
 form {
-    margin: 0 auto;
-    /* centraliza a tabela horizontalmente */
+    margin: auto;
     display: flex;
     flex-direction: column;
     text-align: center;
-    width: 20%;
+
 }
 
-#btn{
+#btn {
     background-color: rgb(195, 167, 221);
     cursor: pointer;
     font-weight: bold;
     font-size: larger;
-}
-
-#desc {
-    text-align: center;
 }
 
 th {
@@ -105,4 +101,21 @@ td {
 
 tr:hover {
     background-color: rgb(227, 206, 247);
+}
+
+.content-form {
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 270px;
+    height: 230px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+
+.info {
+    text-align: left;
 }

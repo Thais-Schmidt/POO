@@ -30,7 +30,7 @@ export default class Pessoa {
 
     idade() {
         let anoAtual = new Date().getFullYear();
-        let dataNascimento = document.getElementById("data_nasc").value;
+        let dataNascimento = document.getElementById("data_nasc").value; 
 
         if (dataNascimento) {
             let anoNascimento = new Date(dataNascimento).getFullYear();
@@ -69,12 +69,11 @@ export default class Pessoa {
     novaPessoa() {
         let tabela = document.getElementById("tbl-pessoas");
 
-        if (!tabela.innerHTML.trim()) {
+        if (!tabela.innerHTML) {
             tabela.innerHTML = Pessoa.criandoTabela();
         }
 
         tabela.innerHTML += this.retornandoDados(); // Adicionando a nova linha
     }
-
 
 }
