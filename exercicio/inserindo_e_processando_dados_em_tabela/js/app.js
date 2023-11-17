@@ -40,4 +40,5 @@ function checandoCaracter(e) {
     if(caracter.match(pattern)){
         return true;
     }
-}
+} 
+

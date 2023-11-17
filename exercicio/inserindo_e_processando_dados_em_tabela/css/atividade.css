@@ -48,7 +48,6 @@ select {
     width: 200px;
     text-align: center;
     margin-bottom: 10px;
-
     font-family: var(--font-text);
     font-size: larger;
 }
@@ -84,6 +83,37 @@ form {
     cursor: pointer;
     font-weight: bold;
     font-size: larger;
+}
+
+#btn-del {
+    background-color: rgb(195, 167, 221);
+    cursor: pointer;
+    font-weight: bold;
+    font-size: larger;
+    border: 0.2px black solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: var(--font-text);
+    font-size: 15px;
+    padding: 3px 3px;
+}
+
+#btn-del:hover {
+    background-color: blueviolet;
+    color: white;
+}
+
+#nome-td {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: justify;
+}
+
+#func-td {
+    max-width: 30px;
 }
 
 th {

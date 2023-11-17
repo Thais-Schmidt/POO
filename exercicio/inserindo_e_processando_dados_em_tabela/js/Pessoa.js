@@ -29,29 +29,27 @@ export default class Pessoa {
     //calculando idade
 
     idade() {
-        let anoAtual = new Date().getFullYear();
-        let dataNascimento = document.getElementById("data_nasc").value; 
+        let dataNascimento = new Date(document.getElementById("data_nasc").value);
+        let hoje = new Date();
 
-        if (dataNascimento) {
-            let anoNascimento = new Date(dataNascimento).getFullYear();
+        let idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        let mesAtual = hoje.getMonth() + 1;
 
-            if (!isNaN(anoNascimento)) {
-                let idade = anoAtual - anoNascimento;
-                return idade;
-            } else {
-                alert("Ano de nascimento inválido");
-            }
-        } 
-        
+        if (mesAtual < dataNascimento.getMonth() + 1 || (mesAtual === dataNascimento.getMonth() + 1 && hoje.getDate() < dataNascimento.getDate())) {
+            idade--;
+        }
+
+        return idade;
     }
+
 
     // incluindo linhas na tabela
 
     static criandoTabela() {
         return `<tr>
-                    <th>Nome:</th>
+                    <th id="nome-th">Nome:</th>
                     <th>Nascimento:</th>
-                    <th>Funçao:</th>
+                    <th>Função:</th>
                     <th>Idade:</th>
                 </tr>`;
 
@@ -59,9 +57,9 @@ export default class Pessoa {
 
     retornandoDados() {
         return `<tr>
-                    <td>${this.Nome}</td>
+                    <td id="nome-td">${this.Nome}</td>
                     <td>${this.Ano}</td>
-                    <td>${this.Cargo}</td>
+                    <td id="func-td">${this.Cargo}</td>
                     <td>${this.Idade}</td>
                 </tr>`;
     }
