@@ -1,7 +1,7 @@
 import Funcionario from "./Funcionario.js";
 
 function adicionando() {
-    // console.log("Função funcionando.");
+    console.log("Função funcionando.");
 
     const func = new Funcionario();
 
@@ -18,6 +18,7 @@ function adicionando() {
 
     func.novaPessoa();
 }
+
 
 export { adicionando };
 

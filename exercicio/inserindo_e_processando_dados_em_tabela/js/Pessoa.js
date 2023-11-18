@@ -29,11 +29,11 @@ export default class Pessoa {
     //calculando idade
 
     idade() {
-        let dataNascimento = new Date(document.getElementById("data_nasc").value);
-        let hoje = new Date();
+        let dataNascimento = new Date(document.getElementById("data_nasc").value); //obtendo a data de fulano
+        let hoje = new Date(); //data atual 
 
-        let idade = hoje.getFullYear() - dataNascimento.getFullYear();
-        let mesAtual = hoje.getMonth() + 1;
+        let idade = hoje.getFullYear() - dataNascimento.getFullYear(); //calculando a idade 
+        let mesAtual = hoje.getMonth() + 1; //os meses no js vao de 0 a 11, por isso acrescentamos +1
 
         if (mesAtual < dataNascimento.getMonth() + 1 || (mesAtual === dataNascimento.getMonth() + 1 && hoje.getDate() < dataNascimento.getDate())) {
             idade--;
