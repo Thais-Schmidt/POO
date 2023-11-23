@@ -7,8 +7,5 @@ console.log(cc1.Depositar(300));
 console.log(cc1.Sacar(200));
 
 
-
-
-
-let cp1 = new Poupanca(999, 575);
-console.log(cp1);
+// let cp1 = new Poupanca(999, 575);
+// console.log(cp1);
